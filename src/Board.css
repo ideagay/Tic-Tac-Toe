@@ -1,0 +1,9 @@
+.board {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.current button{
+    font-weight: bold;
+}
