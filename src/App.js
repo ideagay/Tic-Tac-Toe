@@ -2,6 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import TicTacToe from './components/TicTacToe/Board';
 import ColorChange from './components/ColorChange/Main';
+import SubRoutes from './components/SubRoutes/Main';
+import Search from './components/Search/Main';
 import './App.css';
 
 function Index() {
@@ -50,6 +52,12 @@ function Header() {
                 <li>
                     <Link to="/colorChange">ColorChange</Link>
                 </li>
+                <li>
+                    <Link to="/subRoutes">SubRoutes</Link>
+                </li>
+                <li>
+                    <Link to="/search">Search</Link>
+                </li>
             </ul>
         </nav>
     );
@@ -64,6 +72,8 @@ function AppRouter() {
                 <Route path="/ticTacToe" component={TicTacToe} />
                 <Route path="/topics" component={Topics} />
                 <Route path="/colorChange" component={ColorChange} />
+                <Route path="/subRoutes" component={SubRoutes} />
+                <Route path="/search" component={Search} />
             </div>
         </Router>
     );
